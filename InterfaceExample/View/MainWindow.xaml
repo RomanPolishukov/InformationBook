@@ -1,0 +1,58 @@
+﻿<Window x:Class="InterfaceExample.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InformationBooks"
+        xmlns:viewModel ="clr-namespace:InformationBooks.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="552.5">
+    <!--<Window.DataContext>
+        <viewModel:MainWindowViewModel/>
+    </Window.DataContext>-->
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <ListBox ItemsSource="{Binding Path = Books}" SelectedItem="{Binding Path=SelectedBook, Mode=TwoWay}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock x:Name="TBTitle" Text="{ Binding Path= Title}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+        <Grid Grid.Column="1">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.35*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock FontWeight="Bold" Grid.Row="0" Grid.Column="0">Автор: </TextBlock>
+            <TextBlock FontWeight="Bold" Grid.Row="1" Grid.Column="0">Наименование: </TextBlock>
+
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="{ Binding Path = SelectedBook.Author}"/>
+            <TextBlock Grid.Row="1" Grid.Column="1" Text="{ Binding Path = SelectedBook.Title}"/>
+        
+        </Grid>
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button Command="{ Binding Path = AddCommand}">Добавить</Button>
+            <Button Command="{ Binding Path = RemoveCommand}" CommandParameter="{Binding Path=SelectedBook}">Удалить</Button>
+        </StackPanel>
+        </Grid>
+</Window>

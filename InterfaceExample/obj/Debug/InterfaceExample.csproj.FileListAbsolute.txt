@@ -1,0 +1,15 @@
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample.csprojAssemblyReference.cache
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\App.g.cs
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample_MarkupCompile.cache
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample_MarkupCompile.lref
+D:\projects\c#\InterfaceExample\InterfaceExample\bin\Debug\InterfaceExample.exe.config
+D:\projects\c#\InterfaceExample\InterfaceExample\bin\Debug\InterfaceExample.exe
+D:\projects\c#\InterfaceExample\InterfaceExample\bin\Debug\InterfaceExample.pdb
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample.g.resources
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample.Properties.Resources.resources
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample.csproj.GenerateResource.cache
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample.csproj.CoreCompileInputs.cache
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample.exe
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\InterfaceExample.pdb
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\View\MainWindow.g.cs
+D:\projects\c#\InterfaceExample\InterfaceExample\obj\Debug\View\MainWindow.baml
