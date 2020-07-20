@@ -10,6 +10,7 @@ namespace InformationBooks.Model
 {
     class Book : INotifyPropertyChanged
     {
+		int bbbbbb = 2;
         public event PropertyChangedEventHandler PropertyChanged;
 
         private string author;
